@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>两栏布局</title>
+<style>
+.fl{
+float:left;
+width:30%;
+background-color:#99FF66;
+height:200px;
+}
+.fr{
+float:left;
+width:70%;
+background-color:#FF9933;
+height:200px;
+}
+.fl1{
+width:120px;
+float:left;
+background-color:#99FF66;
+height:200px;
+}
+.fr1{
+overflow:hidden;
+background-color:#FF9933;
+height:200px;
+}
+.container{
+position:relative;
+overflow:auto;
+}
+.fl11{
+width:120px;
+position:absolute;
+top:0;
+left:0;
+background-color:#99FF66;
+height:200px;
+}
+.fr11{
+
+overflow:hidden;
+background-color:#FF9933;
+height:200px;
+}
+.fl2{
+float:left;
+position:absolute;
+top:0;
+left:0;
+background-color:#99FF66;
+ width: calc(100% - 120px);
+height:200px;
+}
+.fr2{
+position:absolute;
+right:0;
+width:120px;
+float:left;
+background-color:#FF9933;
+height:200px;
+}
+
+.fl3{
+float:right;
+width: calc(100% - 200px);
+}
+.fl_3{
+float:left;
+width: calc(100% - 200px);
+background-color:#CC99FF;
+}
+.fr_3{
+float:right;
+width:200px;
+background-color:#CCFF99;
+}
+.fr3{
+float:left;
+width:200px;
+background-color:#99CC66;
+}
+.container1{
+height:100px;
+}
+
+.fl4{
+float:left;
+width:200px;
+background-color:#CC0099;
+}
+.fm4{
+float:left;
+width:200px;
+background-color:#FF9999;
+}
+.fr4{
+float:right;
+width: calc(100% - 400px);
+background-color:#00FFFF;
+}
+.container2{
+position:relative;
+}
+.fl5{
+float:left;
+width:200px;
+background-color:#CC0099;
+}
+.fm5{
+float:left;
+width:200px;
+background-color:#FF9999;
+}
+.fr5{
+position:absolute;
+right:0;
+left:400px;
+background-color:#00FFFF;
+}
+</style>
+</head>
+
+<body>
+<h1>左侧30%，右侧70%</h1>
+<div class="container">
+<div class="fl"></div>
+<div class="fr"></div>
+</div>
+<h1>左侧固定，右侧自适应float</h1>
+<div class="container">
+<div class="fl1">左侧固定</div>
+<div class="fr1">右侧自适应</div>
+</div>
+
+<h1>左侧固定，右侧自适应position</h1>
+<div class="container">
+<div class="fl11">左侧固定</div>
+<div class="fr11">右侧自适应</div>
+</div>
+
+<h1>右侧固定，左侧自适应</h1>
+<div class="container">
+<div class="fl2">左侧宽度自适应</div>
+<div class="fr2">右侧固定</div>
+</div>
+
+<h1>三栏布局 左侧固定中间自适应右侧固定 float</h1>
+<div class="container1">
+<div class="fl3">
+    <div class="fl_3">中间自适应</div> 
+     <div class="fr_3">右侧固宽</div>
+</div> 
+<div class="fr3">左侧固宽</div>
+</div>
+
+<h1>三栏布局 左侧固定中间固定右侧 自适应float</h1>
+<div class="container1">
+<div class="fl4">左侧固定</div>
+<div class="fm4">中间固宽</div>
+<div class="fr4">右侧自适应</div>
+</div>
+
+<h1>三栏布局 左侧固定中间固定右侧 自适应 position</h1>
+<div class="container2">
+<div class="fl5">左侧固定</div>
+<div class="fm5">中间固宽</div>
+<div class="fr5">右侧自适应</div>
+</div>
+</body>
+</html>

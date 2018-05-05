@@ -1,0 +1,85 @@
+/* CSS Document */
+.wrap-list{
+width:70%;
+height:60px;
+ margin:0 auto;
+}
+.wrap-list li{
+border-top:2px solid #ccc;
+border-right:2px solid #ccc;
+border-left:2px solid #ccc;
+border-radius:50px;
+margin-right:10px;
+}
+ .wrap-title{
+ width:100%;
+ line-height:60px;
+ border-bottom: 3px solid #ccc;
+ }
+.wrap{
+      width:100%;
+      height:900px;
+    }
+  
+.container{
+     padding-top: 50px;
+     width:70%;
+     display:flex;
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+	  justify-content: center;
+	  height:200px; 
+	  margin:0 auto;
+	  text-align:center;
+  }
+  .f1{
+      flex:1 0 auto;
+	  border:2px solid #CCCCCC;
+	 
+	 margin-right:2%;
+  }
+  .f2{
+      flex:1 0 auto; 
+	   border:2px solid #CCCCCC;
+	 
+	  margin-right:2%;
+  }
+  .f3{
+       flex:1 0 auto;
+	    border:2px solid #CCCCCC;
+	  
+  }
+  .container2{
+  padding-top:20px;
+  padding-bottom:20px;
+       width:70%;
+     display:flex;
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+	  justify-content: center;
+	  height:200px; 
+	  margin:0 auto;
+	  text-align:center;
+  }
+  .f4{
+      flex:1 0 auto;
+	  border:2px solid #CCCCCC;
+	 
+	 margin-right:2%;
+  }
+  .f5{
+      flex:1 0 auto; 
+	   border:2px solid #CCCCCC;
+	 
+	  margin-right:2%;
+  }
+  .f6{
+       flex:1 0 auto;
+	    border:2px solid #CCCCCC;
+	  
+  }
+  .f7{
+       flex:1 0 auto;
+	    border:2px solid #CCCCCC;
+	  
+  }

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>两栏布局</title>
+<style>
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+	overflow:hidden;
+}
+.left {
+    width:120px;
+    border: 5px solid #ddd;
+	float:left;
+}
+.right {
+    margin-left: 20px;
+    border: 5px solid #ddd;
+	float:left;
+}
+.wrapper1 {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+	overflow:hidden;
+}
+.left1 {
+    margin-right:20px;
+    border: 5px solid #ddd;
+	width:120px;
+	float:left;
+}
+.right1 {
+   border: 5px solid #ddd;
+   overflow: auto;
+}
+.wrapper2 {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+	overflow:auto;
+}
+.left2 {
+    border: 5px solid #ddd;
+	float:left;
+	width: 120px;
+}
+.right2 {
+   display:inline-block;
+   border: 5px solid #ddd;
+  
+}
+.wrapper3 {
+     display:flex;
+	 align-items: flex-start;
+}
+.left3 {
+    border: 5px solid #ddd;
+	width: 120px;
+	flex: 0 0 auto;
+}
+.right3 {
+   flex: 1 1 auto;
+   border: 5px solid #ddd;
+  
+}
+</style>
+</head>
+
+<body>
+<h1>双float方案实现两栏布局</h1>
+<div class="wrapper" id="wrapper">
+  <div class="left">
+    左边固定宽度，高度不高度有可能会很小，也可能很大。
+  </div>
+  <div class="right">
+    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 12这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 1这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 120200px
+  这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 120
+  </div>
+</div>
+
+<h1>float+BFC方法</h1>
+<div class="wrapper1" id="wrapper1">
+  <div class="left1">
+    左边固定宽度，高度不高度有可能会很小，也可能很大。
+  </div>
+  <div class="right1">
+    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 12这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 1这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 120200px
+  这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 120
+  </div>
+</div>
+
+<h1>float+margin-left方法</h1>
+<div class="wrapper2" id="wrapper1">
+  <div class="left2">
+    左边固定宽度，高度不高度有可能会很基本的样式是，两个div相距20px, 左侧div宽 12这里的内容可能比左侧高，也可能比左侧低。宽度
+  </div>
+  <div class="right2">
+    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。
+    这里的内容可能比左侧高，也可能比左侧低。宽度
+    基本的样式是，两个div相距20px, 左侧需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 1这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 120200px小，也
+	可能很大。div宽 120
+  </div>
+</div>
+
+<h1>flex方法</h1>
+<div class="wrapper3" id="wrapper1">
+  <div class="left3">
+    左边固定宽度，高度不高度有可能会很基本的样式是，两个div相距20px, 左侧div宽 12这里的内容可能比左侧高，也可能比左侧低。宽度
+  </div>
+  <div class="right3">
+    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。
+    这里的内容可能比左侧高，也可能比左侧低。宽度
+    基本的样式是，两个div相距20px, 左侧需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 1这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 120200px小，也
+	可能很大。div宽 120
+  </div>
+</div>
+</body>
+</html>

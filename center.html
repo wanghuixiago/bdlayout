@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>水平/垂直/水平垂直居中</title>
+
+
+<style>
+.parent{text-align: center;}  
+.child{display:inline-block;       
+}
+ 
+.child1{
+            width: 200px;
+            margin: 0 auto;
+        }
+.wrap{
+width:100%;
+height:100px;
+line-height:100px;
+background-color:#FFCCCC;
+}
+.span{
+background-color:#CC66CC;
+}
+.wrap1{
+width:100%;
+height:100px;
+display:table-cell;
+vertical-align:middle;
+background-color:#FFCCCC;
+}
+.non-height{
+       background: green;
+	   　　vertical-align:middle;
+    }
+.wrap2{
+            width:200px ;
+            height: 300px;
+            border: 2px solid #ccc;
+        }
+.div1{
+            width:100px ;
+            height: 100px;
+            margin-top: 100px;
+            background: darkblue;
+        } 
+		
+.test{
+     text-align:center;
+	 line-height:100px;
+		}
+		
+		.parent2{
+		 text-align:center;
+		 vertical-align:middle;
+		 display: table-cell;
+		}
+		.child2{
+		display: inline-block;
+		}
+		
+		
+		.parent3{
+    position: relative;
+}
+.child3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 80px;
+    margin: auto;
+	overflow:hidden;
+}
+</style>
+
+
+</head>
+
+<body>
+<h1>水平居中</h1>
+<h2>单行文本水平居中</h2>
+<div class="parent" style="background-color: gray;">
+  <div class="child" style="background-color: lightblue;">DEMO</div>
+</div>
+
+<br />
+<div class="parent1" style="background-color: gray;">
+  <div class="child1" style="background-color: lightblue;">DEMO</div>
+</div>
+
+<h1>垂直居中</h1>
+
+<h2>行内元素的垂直居中</h2>
+<div class="wrap line-height">
+    <span class="span">111111</span>
+</div>
+<h2>块级元素的垂直居中</h2>
+
+<div class="wrap1">
+    <div class="non-height">11111</div>
+</div>
+
+<h2>高度固定的块级元素的垂直居中</h2>
+
+
+<div class="wrap2">
+    <div class="div1">111111</div>
+</div>
+<h1>水平垂直居中</h1>
+<h2>单行文本水平垂直居中</h2>
+<div class="test" style="background-color: lightblue;width: 200px;">测试文字</div>  
+<h2>块级元素水平垂直居中</h2>
+<div class="parent2" style="background-color: gray; width:200px; height:100px;">
+  <div class="child2" style="background-color: lightblue;">测试文字</div>
+</div> 
+<h2>定高的块级元素水平垂直居中</h2>
+
+
+<div class="parent3" style="background-color: lightgray; width:200px; height:100px; ">
+  <div class="child3" style="background-color: lightblue;">测试文字测试文字测试文字</div>
+</div>
+
+
+
+</body>
+</html>
